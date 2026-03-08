@@ -1,0 +1,9 @@
+.container {
+    background-color: var(--neutral-header);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}

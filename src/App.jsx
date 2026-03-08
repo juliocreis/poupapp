@@ -1,15 +1,17 @@
-import './App.css'
-import logo from './assets/logo.svg'
+import "./App.css";
+import logo from "./assets/logo.svg";
+import { Container } from "./components/Container";
 
 function App() {
-
   return (
     <>
-      <aside>
-        <img src={logo} alt="Logo do Poupapp" />
-      </aside>
+      <Container>
+        <aside>
+          <img src={logo} alt="Logo do Poupapp" />
+        </aside>
+      </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
