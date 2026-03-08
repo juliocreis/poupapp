@@ -11,3 +11,9 @@
 --secondary-income: #D6FF62; 
 --secondary-expense: #F87828; 
 } 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--neutral-darker);
+}
