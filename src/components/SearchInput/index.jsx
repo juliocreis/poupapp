@@ -1,11 +1,11 @@
 import styles from "./search-input.module.css";
-import search from "../../assets/search.png"
+import { IconSearch } from "../Icons";
 
 export function SearchInput(props) {
   return (
     <>
       <div className={styles.search__input}>
-        <img src={search} alt="Lupa" />
+        <IconSearch/>
         <input className={styles.input} {...props} />
       </div>
     </>
