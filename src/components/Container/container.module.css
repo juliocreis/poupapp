@@ -1,5 +1,4 @@
 .container {
-    background-color: var(--neutral-header);
     display: flex;
     flex-direction: column;
     gap: 24px;
