@@ -1,7 +1,6 @@
 .container {
     display: flex;
     gap: 24px;
-    flex-wrap: nowrap;
     margin: 0 auto;
     max-width: 1200px;
 }
