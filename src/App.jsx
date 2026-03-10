@@ -21,6 +21,39 @@ function App() {
             <Typography variant='h1'>Olá, Júlio!</Typography>
             <Typography variant='p'>Veja como estão suas finanças hoje.</Typography>
           </div>
+
+          <Card>
+            <Card.Header>
+              Orçamento diário disponível:
+            </Card.Header>
+            <Card.Body>
+              R$200
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>
+              Orçamento diário disponível:
+            </Card.Header>
+            <Card.Body>
+              R$200
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>
+              Orçamento diário disponível:
+            </Card.Header>
+            <Card.Body>
+              R$200
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>
+              Orçamento diário disponível:
+            </Card.Header>
+            <Card.Body>
+              R$200
+            </Card.Body>
+          </Card>
         </Main>
       </Container>
     </>
