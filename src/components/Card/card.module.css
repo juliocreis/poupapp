@@ -1,0 +1,21 @@
+.card {
+    width: 435px;
+}
+
+.header {
+    height: 56px;
+    background-color: var(--neutral-header);
+    border-radius: 24px 24px 0 0;
+    color: var(--neutral-text);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 16px;
+    text-align: center;
+}
+
+.body {
+    border-radius: 0 0 24px 24px;
+    background-color: var(--neutral-surface);
+    height: 171px;
+}
