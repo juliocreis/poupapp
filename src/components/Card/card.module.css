@@ -17,5 +17,6 @@
 .body {
     border-radius: 0 0 24px 24px;
     background-color: var(--neutral-surface);
-    height: 171px;
+    text-align: center;
+    padding: 32px 16px;
 }

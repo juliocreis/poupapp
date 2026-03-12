@@ -6,6 +6,7 @@ import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
 
 import Card from "./components/Card";
+import { DailyBudget } from "./components/DailyBudget";
 
 function App() {
   return (
@@ -29,7 +30,9 @@ function App() {
           <section>
             <Card>
               <Card.Header>Orçamento diário disponível:</Card.Header>
-              <Card.Body>R$200</Card.Body>
+              <Card.Body>
+                <DailyBudget value={200}/>
+              </Card.Body>
             </Card>
             <Card>
               <Card.Header>Orçamento diário disponível:</Card.Header>
