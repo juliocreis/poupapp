@@ -23,7 +23,7 @@ function App() {
             placeholder="Procure seu dinheiro..."
           />
 
-          <div>
+          <div className={styles.welcome}>
             <Typography variant="h1">Olá, Júlio!</Typography>
             <Typography variant="p">
               Veja como estão suas finanças hoje.
