@@ -4,10 +4,12 @@ import { Container } from "./components/Container";
 import { Main } from "./components/Main";
 import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
-
-import Card from "./components/Card";
 import { DailyBudget } from "./components/dailyBudget";
 import { SavingStatus } from "./components/SavingsStatus";
+
+import Card from "./components/Card";
+
+import styles from './app.module.css'
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
             </Typography>
           </div>
 
-          <section>
+          <section className={styles.grid}>
             <Card>
               <Card.Header>Orçamento diário disponível:</Card.Header>
               <Card.Body>
