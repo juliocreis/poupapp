@@ -1,4 +1,4 @@
-import styles from "./daily-budget.module.css";
+import styles from "./dailybudget.module.css";
 
 const formater = new Intl.NumberFormat("pt-BR", {
   style: "currency",
@@ -6,5 +6,5 @@ const formater = new Intl.NumberFormat("pt-BR", {
 });
 
 export function DailyBudget({ value }) {
-  return <p className={styles.p}>{formater.format(value)}</p>;
+  return <p className={styles.daily}>{formater.format(value)}</p>;
 }

@@ -6,7 +6,7 @@ import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
 
 import Card from "./components/Card";
-import { DailyBudget } from "./components/DailyBudget";
+import { DailyBudget } from "./components/dailyBudget";
 
 function App() {
   return (
