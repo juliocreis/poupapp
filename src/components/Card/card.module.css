@@ -2,6 +2,8 @@
     width: 435px;
     background-color: var(--neutral-surface);
     border-radius: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -17,5 +19,9 @@
 }
 
 .body {
+    flex-grow: 1;
     padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
