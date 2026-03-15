@@ -15,7 +15,11 @@
     font-weight: 700;
 }
 
-.item__description, .item__value {
+.item__green {
+    color: var(--secondary-income);
+}
+
+.item__orange {
     color: var(--secondary-expense);
 }
 
