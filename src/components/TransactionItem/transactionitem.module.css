@@ -1,0 +1,24 @@
+.transaction__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+}
+
+.info__item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item__description {
+    font-weight: 700;
+}
+
+.item__description, .item__value {
+    color: var(--secondary-expense);
+}
+
+.item__date {
+    color: var(--neutral-text);
+}
