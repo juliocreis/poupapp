@@ -1,0 +1,25 @@
+.accounts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.lista {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.lista li {
+    border-bottom: 1px solid var(--neutral-header);
+}
+
+.lista li:last-child {
+    border: none;
+}
+
