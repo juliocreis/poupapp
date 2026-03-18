@@ -16,7 +16,7 @@ export function Header({ children }) {
 
 export function Body({ children }) {
     return (
-        <div>
+        <div className="flex justify-center py-8 px-4">
             {children}
         </div>
     )
