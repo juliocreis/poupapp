@@ -3,10 +3,10 @@ import { Container } from "./components/Container";
 import { Main } from "./components/Main";
 import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
+import { DailyBudget } from "./components/DailyBudget";
 
 import Card from "./components/Cards";
-import { Formater } from "./components/Formater";
-import { DailyBudget } from "./components/DailyBudget";
+import { SavingStatus } from "./components/SavingStatus";
 
 function App() {
   return (
@@ -41,7 +41,7 @@ function App() {
                 Progresso da meta financeira
               </Card.Header>
               <Card.Body>
-                
+                <SavingStatus value={50}></SavingStatus>
               </Card.Body>
             </Card>
 
