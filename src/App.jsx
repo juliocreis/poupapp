@@ -6,6 +6,7 @@ import { Typography } from "./components/Typography";
 import { DailyBudget } from "./components/DailyBudget";
 import { SavingStatus } from "./components/SavingStatus";
 import { Transactions } from "./components/Transactions";
+import { Accounts } from "./components/Accounts";
 
 import Card from "./components/Cards";
 
@@ -60,7 +61,7 @@ function App() {
                 Minhas contas
               </Card.Header>
               <Card.Body>
-                
+                <Accounts />
               </Card.Body>
             </Card>
           </section>

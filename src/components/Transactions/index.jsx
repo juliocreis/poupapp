@@ -40,7 +40,7 @@ export function Transactions() {
           );
         })}
       </ul>
-      <Button className="text-neutral-text border border-neutral-text rounded-3xl flex items-center gap-2 px-8 py-[11px] mx-auto cursor-pointer">
+      <Button>
         <IconCurrency />
         Adicionar transação
       </Button>
