@@ -4,9 +4,10 @@ import { Main } from "./components/Main";
 import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
 import { DailyBudget } from "./components/DailyBudget";
+import { SavingStatus } from "./components/SavingStatus";
+import { Transactions } from "./components/Transactions";
 
 import Card from "./components/Cards";
-import { SavingStatus } from "./components/SavingStatus";
 
 function App() {
   return (
@@ -50,7 +51,7 @@ function App() {
                 Movimentação financeira
               </Card.Header>
               <Card.Body>
-                200,00
+                <Transactions></Transactions>
               </Card.Body>
             </Card>
 
