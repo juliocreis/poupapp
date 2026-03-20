@@ -1,58 +1,65 @@
-import "./App.css";
 import { Aside } from "./components/Aside";
 import { Container } from "./components/Container";
 import { Main } from "./components/Main";
 import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
-import { DailyBudget } from "./components/dailyBudget";
-import { SavingStatus } from "./components/SavingsStatus";
-
-import Card from "./components/Card";
-
-import styles from './app.module.css'
+import { DailyBudget } from "./components/DailyBudget";
+import { SavingStatus } from "./components/SavingStatus";
 import { Transactions } from "./components/Transactions";
 import { Accounts } from "./components/Accounts";
 
+import Card from "./components/Cards";
+
 function App() {
   return (
-    <>
+    <div className="bg-neutral-background min-h-screen">
       <Container>
         <Aside />
         <Main>
           <SearchInput
             type="text"
-            name="searchMoney"
             placeholder="Procure seu dinheiro..."
+            name="q"
           />
-
-          <div className={styles.welcome}>
+          <div className="flex flex-col gap-2">
             <Typography variant="h1">Olá, Júlio!</Typography>
             <Typography variant="p">
               Veja como estão suas finanças hoje.
             </Typography>
           </div>
 
-          <section className={styles.grid}>
+          <section className="grid grid-cols-2 gap-6">
             <Card>
-              <Card.Header>Orçamento diário disponível:</Card.Header>
+              <Card.Header>
+                Orçamento diário disponível:
+              </Card.Header>
               <Card.Body>
-                <DailyBudget value={200}/>
+                <DailyBudget value='200'></DailyBudget>
               </Card.Body>
             </Card>
+
             <Card>
-              <Card.Header>Progresso da meta financeira</Card.Header>
+              <Card.Header>
+                Progresso da meta financeira
+              </Card.Header>
               <Card.Body>
-                <SavingStatus percent={60}/>
+                <SavingStatus value={50}></SavingStatus>
               </Card.Body>
             </Card>
+
             <Card>
-              <Card.Header>Movimentação financeira</Card.Header>
+              <Card.Header>
+                Movimentação financeira
+              </Card.Header>
               <Card.Body>
-                <Transactions />
+                <Transactions></Transactions>
               </Card.Body>
             </Card>
+
             <Card>
-              <Card.Header>Minhas contas</Card.Header>
+              <Card.Header>
+                Minhas contas
+              </Card.Header>
               <Card.Body>
                 <Accounts />
               </Card.Body>
@@ -60,7 +67,7 @@ function App() {
           </section>
         </Main>
       </Container>
-    </>
+    </div>
   );
 }
 

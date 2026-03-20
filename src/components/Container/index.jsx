@@ -1,8 +1,6 @@
-import styles from './container.module.css'
-
 export function Container({ children }) {
     return (
-        <div className={styles.container}>
+        <div className="max-w-[1200px] mx-auto flex gap-6">
             {children}
         </div>
     )

@@ -1,15 +1,12 @@
-import styles from './progressbar.module.css'
-
-export function ProgressBar({ percent }) {
-    return (
-        <div className={styles.wrapper}>
-            <div 
-                className={styles.filled}
-                style={{
-                    width:`${percent}%`}}
-            >
-            {percent}%
-            </div>
-        </div>
-    )
+export function ProgressBar({ value }) {
+  return (
+    <div className="bg-neutral-darker w-full h-[40px] rounded-lg w-full">
+      <div
+        className="bg-primary-highlight h-full rounded-lg flex justify-center items-center transition-[0.5s] text-neutral-darker leading-[120%] font-medium"
+        style={{ width: `${value}%` }}
+      >
+        {value}%
+      </div>
+    </div>
+  );
 }

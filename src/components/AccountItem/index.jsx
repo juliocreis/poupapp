@@ -1,20 +1,17 @@
 import { Formater } from "../Formater";
-import { IconBank } from "../Icons";
-import styles from "./accountitem.module.css";
+import { IconBank, IconWallet } from "../Icons";
 
 export function AccountItem({ item }) {
-  return (
-    <div className={styles.account__item}>
-      <p className={`${styles.item__bank}`}>
-        <IconBank /> {item.bank}
-      </p>
-
-      <div className={styles.item__balance}>
-        <p className={styles.balance__text}>Saldo</p>
-        <p>
-          <Formater value={item.balance}></Formater>
-        </p>
-      </div>
-    </div>
-  );
+    return (
+        <div className="flex justify-between text-neutral-text">
+            <p className="flex items-center justify-center gap-2 font-bold m-0 p-0 leading-[120%]">
+                <IconBank />
+                {item.bank}
+            </p>
+            <div className="w-[120px] leading-[120%] flex flex-col gap-2">
+                <p className="font-bold">Saldo</p>
+                <p className="font-[15px] font-light"><Formater value={item.balance} /></p>
+            </div>
+        </div>
+    )
 }

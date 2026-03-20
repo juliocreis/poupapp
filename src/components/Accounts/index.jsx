@@ -1,27 +1,39 @@
-import styles from "./accounts.module.css";
-import accounts from "../../../accounts.json";
 import { AccountItem } from "../AccountItem";
 import { Button } from "../Button";
 import { IconWallet } from "../Icons";
 
+const banks = [
+  {
+    bank: "Anybank",
+    balance: 1200,
+  },
+  {
+    bank: "Bytebank",
+    balance: 800,
+  },
+  {
+    bank: "Switch Bank",
+    balance: 1800,
+  },
+];
+
 export function Accounts() {
   return (
-    <div className={styles.accounts}>
-      <ul className={styles.lista}>
-        {accounts.map((accountItem, index) => {
+    <div className="w-full flex flex-col gap-41">
+      <ul className="flex flex-col gap-4">
+        {banks.map((account, index) => {
           return (
-            <li key={index} className={styles.item}>
-              <AccountItem item={accountItem} />
+            <li key={index}>
+              <AccountItem item={account}></AccountItem>
             </li>
           );
         })}
       </ul>
 
-      <div className={styles.button}>
-        <Button>
-          <IconWallet /> Adicionar conta
-        </Button>
-      </div>
+      <Button>
+        <IconWallet />
+        Adicionar conta
+      </Button>
     </div>
   );
 }

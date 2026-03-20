@@ -1,8 +1,6 @@
-import styles from './card.module.css'
-
 export function Card({ children }) {
     return (
-        <div className={styles.card}>
+        <div className="bg-neutral-surface w-[435px] min-h-[171px] rounded-3xl">
             {children}
         </div>
     )
@@ -10,7 +8,7 @@ export function Card({ children }) {
 
 export function Header({ children }) {
     return (
-        <div className={styles.header}>
+        <div className="bg-neutral-header h-[56px] rounded-t-3xl text-[19px] text-neutral-text font-bold p-4 text-center" >
             {children}
         </div>
     )
@@ -18,13 +16,13 @@ export function Header({ children }) {
 
 export function Body({ children }) {
     return (
-        <div className={styles.body}>
+        <div className="flex justify-center py-8 px-4 min-h-[160px] items-center">
             {children}
         </div>
     )
 }
 
 Card.Header = Header;
-Card.Body = Body;
+Card.Body = Body
 
 export default Card
